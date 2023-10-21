@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em;
+    border-bottom: 0.5px solid black;
+}
+
+.n-Logo img {
+    max-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 2em;
+    margin: 12px;
+}
+
+.Nav {
+    display: flex;
+}
+
+.Nav-item {
+    padding: 0 1em;
+    border: 0.5px solid black;
+    min-width: 60px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.Nav-item:hover {
+    background: lightcoral;
+}
+
+.greetpadding {
+    padding-top: 1em;
+    padding-left: 5em;
+}
+
+.banner {
+    border-bottom: 1px solid black;
+    background-image: url(../assets/pantai.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.circle {
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.headquaters{
+    padding: 3em;
+}
+
+.hq-item {
+    padding: 2em 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-text {
+    font-size: small;
+    color: gray;
+}

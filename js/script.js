@@ -16,7 +16,7 @@ function showDateTime() {
 function saveData() {
     var nama = document.getElementById("nama").value;
     var tgllahir = document.getElementById("tgl-lahir").value;
-       var selectedGender = document.querySelector('input[name="gender"]:checked').value;
+    var selectedGender = document.querySelector('input[name="gender"]:checked').value;
     var pesan = document.getElementById("pesan").value;
 
 
@@ -28,7 +28,7 @@ function saveData() {
         return;
     }
 
-    ppsan.innerHTML = "Save @: " + showDateTime() + "<br> Nama: " + nama + "<br>Tanggal Lahir: " + tgllahir + "<br>Jenis Kelamin: " + selectedGender.value + "<br>Pesan: " + pesan;
+    ppsan.innerHTML = "Save @: " + showDateTime() + "<br> Nama: " + nama + "<br>Tanggal Lahir: " + tgllahir + "<br>Jenis Kelamin: " + selectedGender + "<br>Pesan: " + pesan;
 }
 
 var radioButtons = document.querySelectorAll('input[name="gender"]');

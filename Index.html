@@ -29,28 +29,59 @@
     <section class="headquarters">
         <h1>Our Headquaters</h1>
         <div class="hq-item">
-        <div class="circle"></div>
+        <div class="circle">
+        </div>
         <div class="circle"></div>
         <div class="circle"></div>
         </div>
     </section>
     <section id="Message-Us" class="form">
         <div class="form-left">
-            <table>
+            <table class="table1">
+                <tr>
                 <td>Nama</td>
                 <td>:</td>
-                <input id="nama" name="nama" placeholder="nama"></input>
+                <td><input id="nama" name="nama" placeholder="nama" type="text"></input></td>
+                </tr>
+                <tr>
+                <td>Tgl. Lahir</td>
+                <td>:</td>
+                <td><input id="tgl-lahir" name="tgllahir" type="date"></input></td>
+              </tr>
+              <td>Jenis Kelamin</td>
+              <td>:</td>
+              <td>
+                <div class="radio-btn">
+                <input type="radio" name="gender" id="male" value="Laki-laki">
+                <label for="male">Laki-laki</label>
+                <input type="radio" name="gender" id="female" value="Perempuan">
+                <label for="female">Perempuan</label>
+                </div>
+              </td>
+              <tr>
+              <td>Message</td>
+              <td>:</td>
+              <td> <input id="pesan" class="pesan" type="text" placeholder="Masukan Pesan disini"></input></td>
+              </tr>
+              <br>
+              <td>
+              <button> Simpan </button>
+              </td>
             </table>
         </div>
         <div class="form-right">
-
+            <table id="table2" class="table2">
+                    <p id="ppsan" class="ppsan"></p>
+            </table>
         </div>        
     </section>
+
     <footer class="footer">
         <center>
         <p class="footer-text"> Made by Rizky Naram</p>
         </center>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>

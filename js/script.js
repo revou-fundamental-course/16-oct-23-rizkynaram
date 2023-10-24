@@ -1,3 +1,37 @@
+document.getElementById('open-profile').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'block';
+});
+
+document.getElementById('close-popup').addEventListener('click', function() {
+    document.getElementById('popup').style.display = 'none';
+});
+
+
+var sliderIndex = 1;
+showDivs(sliderIndex);
+
+function showDivs(n) {
+    var slides = document.getElementsByClassName("slide");
+    if (n > slides.length) {
+        sliderIndex = 1;
+    }
+    if (n < 1) {
+        sliderIndex = slides.length;
+    }
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[sliderIndex - 1].style.display = "block";
+}
+
+function plusDivs(n) {
+    showDivs(sliderIndex += n);
+}
+
+setInterval(function() {
+    plusDivs(1);
+}, 4000);
+
 
 function showDateTime() {
     var date = new Date();

@@ -55,14 +55,27 @@
     cursor: pointer; 
 }
 
-
 .banner {
-    border-bottom: 1px solid black;
-    background-image: url(../assets/pantai.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
+    position: relative;
+    overflow: hidden;
 }
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    overflow: hidden;
+    height: 20%;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
 
 .circle {
     height: 150px;
@@ -70,6 +83,11 @@
     background-color: lightcoral;
     border: 1px solid black;
     border-radius: 50%;
+}
+.label {
+    text-align: center;
+    margin-top: 160px;
+    font-weight: bold;
 }
 
 .headquaters{
@@ -180,4 +198,61 @@ body {
     bottom: 0;
     width: 100%;
     padding: 10px 0;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.profil {
+     background-image: url(../assets/img/profil/fotoku.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+}
+
+@media only screen and (max-width: 600px){
+    .header {
+        flex-direction: column;
+    }
+    .Nav {
+        width: 100%;
+        flex-direction: column;
+    }
+    .n-Logo {
+        border-bottom: 14px;
+    }
+     .table2 {
+        width: 80%;
+        padding: 2px;
+    }
+
 }

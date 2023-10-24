@@ -10,29 +10,41 @@
 <body>
     <header class="header">
         <div class="n-Logo">
-            <img src="assets/logorevou.png" alt="revoU">
+            <img src="assets/img/logo/logorevou.png" alt="revoU">
         </div>
         <div class="Nav">
             <a class="Nav-item">Home</a>
-            <a class="Nav-item">Our Profile</a>
+            <a id="open-profile" class="Nav-item">Our Profile</a>
             <a class="Nav-item">Portofolio</a>
             <a href="#Message-Us" class="Nav-item">Message Us</a>
         </div>
     </header>
 
-    <section class="banner">
+    <section>
         <div class="greeting">
-        <h1> Hai... My Name is Rizky Putra Naram Pratama</h1>
-        <p>Ini Adalah Website Pertama..</p>
+            <h1> Hai... My Name is Rizky Putra Naram Pratama</h1>
+            <p>Ini Adalah Website Pertama..</p>
+            </div>
+    </section>
+    <section class="banner">
+        <div class="slider">
+            <div class="slide"><img src="assets/img/slider/gambar1.webp" alt="gambar 1"></div>
+            <div class="slide"><img src="assets/img/slider/gambar2.jpg" alt="gambar 2"></div>
+            <div class="slide"><img src="assets/img/slider/gambar3.jpg" alt="gambar 3"></div>
         </div>
     </section>
-    <section class="headquarters">
+        <section class="headquarters">
         <h1>Our Headquaters</h1>
         <div class="hq-item">
-        <div class="circle">
+        <div class="circle"> 
+        <div class="label">Jakarta</div>
         </div>
-        <div class="circle"></div>
-        <div class="circle"></div>
+        <div class="circle">
+            <div class="label">Yogjakarta</div>
+        </div>
+        <div class="circle">
+            <div class="label">Surabaya</div>
+        </div>
         </div>
     </section>
     <section id="Message-Us" class="form">
@@ -81,6 +93,17 @@
         <p class="footer-text"> Made by Rizky Naram</p>
         </center>
     </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+            <section class="profil">
+            <img id="foto"></img>
+            </section>
+            <h2>Our Profile</h2>
+            <p>Isi dengan konten profil Anda di sini.</p>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

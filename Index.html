@@ -6,8 +6,105 @@
     <title>My Page</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>Hello World!</h1>
+    <header class="header">
+        <div class="n-Logo">
+            <img src="assets/img/logo/logorevou.png" alt="revoU">
+        </div>
+        <div class="Nav">
+            <a class="Nav-item">Home</a>
+            <a id="open-profile" class="Nav-item">Our Profile</a>
+            <a class="Nav-item">Portofolio</a>
+            <a href="#Message-Us" class="Nav-item">Message Us</a>
+        </div>
+    </header>
+
+    <section>
+        <div class="greeting">
+            <h1> Hai... My Name is Rizky Putra Naram Pratama</h1>
+            <p>Ini Adalah Website Pertama..</p>
+            </div>
+    </section>
+    <section class="banner">
+        <div class="slider">
+            <div class="slide"><img src="assets/img/slider/gambar1.webp" alt="gambar 1"></div>
+            <div class="slide"><img src="assets/img/slider/gambar2.jpg" alt="gambar 2"></div>
+            <div class="slide"><img src="assets/img/slider/gambar3.jpg" alt="gambar 3"></div>
+        </div>
+    </section>
+        <section class="headquarters">
+        <h1>Our Headquaters</h1>
+        <div class="hq-item">
+        <div class="circle"> 
+        <div class="label">Jakarta</div>
+        </div>
+        <div class="circle">
+            <div class="label">Yogjakarta</div>
+        </div>
+        <div class="circle">
+            <div class="label">Surabaya</div>
+        </div>
+        </div>
+    </section>
+    <section id="Message-Us" class="form">
+        <div class="form-left">
+            <table class="table1">
+                <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td><input id="nama" name="nama" placeholder="nama" type="text"></input></td>
+                </tr>
+                <tr>
+                <td>Tgl. Lahir</td>
+                <td>:</td>
+                <td><input id="tgl-lahir" name="tgllahir" type="date"></input></td>
+              </tr>
+              <td>Jenis Kelamin</td>
+              <td>:</td>
+              <td>
+                <div class="radio-btn">
+                <input type="radio" name="gender" id="male" value="Laki-laki">
+                <label for="male">Laki-laki</label>
+                <input type="radio" name="gender" id="female" value="Perempuan">
+                <label for="female">Perempuan</label>
+                </div>
+              </td>
+              <tr>
+              <td>Message</td>
+              <td>:</td>
+              <td> <input id="pesan" class="pesan" type="text" placeholder="Masukan Pesan disini"></input></td>
+              </tr>
+              <br>
+              <td>
+              <button> Simpan </button>
+              </td>
+            </table>
+        </div>
+        <div class="form-right">
+            <table id="table2" class="table2">
+                    <p id="ppsan" class="ppsan"></p>
+            </table>
+        </div>        
+    </section>
+
+    <footer class="footer">
+        <center>
+        <p class="footer-text"> Made by Rizky Naram</p>
+        </center>
+    </footer>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+            <section class="profil">
+            <img id="foto"></img>
+            </section>
+            <h2>Our Profile</h2>
+            <p>Isi dengan konten profil Anda di sini.</p>
+        </div>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>

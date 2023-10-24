@@ -1,0 +1,258 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1em;
+    border-bottom: 1px solid black;
+}
+
+.n-Logo img {
+    max-height: 40px;
+    left: 2em;
+    margin: 12px;
+}
+
+.Nav {
+    display: flex;
+}
+
+.Nav-item {
+    padding: 0 1em;
+    border: 0.5px solid black;
+    min-width: 60px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.Nav-item:hover {
+    background: lightcoral;
+}
+
+.greetpadding {
+    padding-top: 3em;
+    padding-left: 10em;
+}
+
+.greeting {
+    text-align: left; 
+    padding: 2em; 
+}
+
+.greeting h1 {
+    font-size: 36px; 
+    color: black; 
+}
+
+.greeting p {
+    font-size: 18px; 
+    color: black ; 
+}
+
+.greeting h1:hover, .greeting p:hover {
+    color: #FF5733; 
+    cursor: pointer; 
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    overflow: hidden;
+    height: 20%;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+
+.circle {
+    height: 150px;
+    width: 150px;
+    background-color: lightcoral;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.label {
+    text-align: center;
+    margin-top: 160px;
+    font-weight: bold;
+}
+
+.headquaters{
+    padding: 3em;
+    border-bottom: 1px solid black;
+    background-color: #f4f4f4;
+}
+
+.hq-item {
+    padding: 2em 2em;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+}
+
+.footer-text {
+    font-size: small;
+    color: gray;
+}
+
+
+form {
+    display: flex;
+    border-top: 1px solid black;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 1px solid black;
+    background-color: #f4f4f4;
+ }
+
+ input[type="text"]{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="date"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 16px;
+}
+
+.table1 td {
+    padding: 5px;
+}
+
+.table1 {
+    float:left;
+    width:50%;
+    padding:10px;
+}
+.table2 {
+    float: right;
+    width:40%;
+    height:350px;
+    border:1px solid black;
+    border-radius: 5px;
+    padding:10px;
+    margin-bottom: 4em;
+    margin-right: 2em;
+}
+
+
+.pesan {
+    width: 300px;
+    height:100px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+#ppsan {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant-position: super;
+    color: #333;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.footer {
+    position: relative;
+    background-color: #333;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-style: bold;
+    text-align: center; 
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.profil {
+     background-image: url(../assets/img/profil/fotoku.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+}
+
+@media only screen and (max-width: 600px){
+    .header {
+        flex-direction: column;
+    }
+    .Nav {
+        width: 100%;
+        flex-direction: column;
+    }
+    .n-Logo {
+        border-bottom: 14px;
+    }
+     .table2 {
+        width: 80%;
+        padding: 2px;
+    }
+
+}
